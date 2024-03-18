@@ -11,7 +11,6 @@
 
 ## POODLE Update
 - Because of the Poodle vulnerability, PayPal has disabled SSLv3. 
-- To enable TLS encryption, the changes were made to [PPHttpConfig.php](https://github.com/paypal/sdk-core-php/blob/master/lib/PayPal/Core/PPHttpConfig.php#L11) in [SDK Core](https://github.com/paypal/sdk-core-php/tree/master) to use a cipher list specific to TLS encryption.
 ``` php
     /**
 	 * Some default options for curl
@@ -153,13 +152,11 @@ Alternatively, you can configure the SDK via the sdk_config.ini file.
     $service  = new PayPalAPIInterfaceServiceService();
 ```
 
-You can refer full list of configuration parameters in [wiki](https://github.com/paypal/sdk-core-php/wiki/Configuring-the-SDK) page.
-
 ## Instant Payment Notification (IPN)
 
 Please refer to the IPN-README in 'samples/IPN' directory.
 
 ## Links
 
-   * API Reference - https://developer.paypal.com/webapps/developer/docs/classic/api/#merchant
+   * API Reference - https://developer.paypal.com/api/nvp-soap/
    * If you need help using the SDK, a new feature that you need or have a issue to report, please visit https://github.com/paypal/merchant-sdk-php/issues 
